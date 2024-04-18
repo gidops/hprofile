@@ -16,8 +16,8 @@ jobs :
       - name : Set Java 11
         uses : actions/java@v3
         with:
-          distribution: 'temurin' 
-          java version: '11'
+          distribution: temurin
+          java version: 11
       
     #setup sonar qube
       - name : Setup Sonarqube
