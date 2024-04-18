@@ -20,10 +20,10 @@ jobs :
           java version: '11'
       
       - name : Setup Sonarqube
-      - uses : warchant/setup-sonar-scanner@v7
+        uses : warchant/setup-sonar-scanner@v7
 
       - name : SonarQube Scan
-      - uses : sonar-scanner
+        uses : sonar-scanner
            -Dsonar.host.url=${{ secrets.SONAR_URL }}
            -Dsonar.login=${{ secrets.SONAR_TOKEN }}
            -Dsonar.organization=${{ secrets.SONAR_ORGANIZATION }}
